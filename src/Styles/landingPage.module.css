@@ -1,0 +1,93 @@
+.container {
+    width: 75dvw;
+    height: 100dvh;
+    margin-inline: auto;
+}
+
+.header {
+    text-align: center;
+    padding: 1em 0;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+}
+
+.subheader {
+    text-align: center;
+    padding: 1em 0;
+    font-size: clamp(0.75rem, 2vw, 1.5rem);
+}
+
+.gameType {
+    height: 1.5em;
+    text-align: center;
+}
+
+.btnContainer {
+    display: grid;
+    margin-inline: auto;
+    gap: 5em;
+    padding: 1em
+}
+
+.normal {
+    height: 7em;
+    width: 7em;
+}
+
+.game {
+    height: 7em;
+    width: 7em;
+}
+
+.divider {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    height: 7em;
+}
+
+.btns {
+    display: grid;
+    gap: 2em;
+    justify-items: center;
+}
+
+.rock {
+    background-image: url("../assets/icon-rock.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.paper {
+    background-image: url("../assets/icon-paper.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.scissors {
+    background-image: url("../assets/icon-scissors.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.lizard {
+    background-image: url("../assets/icon-lizard.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.spock {
+    background-image: url("../assets/icon-spock.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.rulesBtn {
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+}

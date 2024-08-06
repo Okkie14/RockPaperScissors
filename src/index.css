@@ -1,0 +1,82 @@
+:root {
+  font-family: Barlow Semi Condensed, system-ui, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  /* Background Gradient */
+  --BGColor1: hsl(214, 47%, 23%);
+
+  --BGColor2: hsl(237, 49%, 15%);
+  /* Gradients */
+  --scissorsColor1: hsl(39, 89%, 49%);
+  --scissorsColor2: hsl(40, 84%, 53%);
+  --paperColor1: hsl(230, 89%, 62%);
+  --paperColor2: hsl(230, 89%, 65%);
+  --rockColor1: hsl(349, 71%, 52%);
+  --rockColor2: hsl(349, 70%, 56%);
+  --lizardColor1: hsl(261, 73%, 60%);
+  --lizardColor2: hsl(261, 72%, 63%);
+  --cyan1: hsl(189, 59%, 53%);
+  --cyan2: hsl(189, 58%, 57%);
+
+  /* Neutrals */
+  --neutralDarkText: hsl(229, 25%, 31%);
+  --neutralScoreText: hsl(229, 64%, 46%);
+  --neutralHeaderOutline: hsl(217, 16%, 45%);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background: radial-gradient(circle, var(--BGColor1), var(--BGColor2));
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  8. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}

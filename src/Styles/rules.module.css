@@ -1,0 +1,26 @@
+.rulesHeader {
+    color: var(--neutralDarkText);
+    text-align: center;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    text-decoration: underline;
+    font-weight: 900;
+    letter-spacing: 0.25rem;
+}
+
+.rulesSubheader {
+    color: var(--neutralDarkText);
+    text-align: center;
+    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+    font-weight: 700;
+}
+
+.rules {
+    color: var(--neutralDarkText);
+    text-align: center;
+}
+
+.rulesContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
