@@ -14,7 +14,16 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<LandingPage />} />
+        <Route path="/" element={
+          <LandingPage
+            normalRules={normalRules} 
+            setNormalRules={setNormalRules} 
+            bonusRules={bonusRules} 
+            setBonusRules={setBonusRules} 
+            rulesModal={rulesModal} 
+            setRulesModal={setRulesModal} 
+          />} 
+        />
         <Route path="/rock-paper-scissors" element={
           <NormalGame 
             normalRules={normalRules} 

@@ -4,9 +4,17 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Rules from "./Rules";
 
-export default function LandingPage() {
+interface NormalGameProps {
+    rulesModal: boolean;
+    setRulesModal: React.Dispatch<React.SetStateAction<boolean>>;
+    normalRules: boolean;
+    setNormalRules: React.Dispatch<React.SetStateAction<boolean>>;
+    bonusRules: boolean;
+    setBonusRules: React.Dispatch<React.SetStateAction<boolean>>
+}
+
+const LandingPage: React.FC<NormalGameProps> = ({ rulesModal, setRulesModal, normalRules, setNormalRules, bonusRules, setBonusRules }) =>  {
     const navigate = useNavigate();
-    const [rulesModal, setRulesModal] = useState(false);
     const [hoverNormal, setHoverNormal] = useState(false);
     const [hoverBonus, setHoverBonus] = useState(false);
 
@@ -52,7 +60,9 @@ export default function LandingPage() {
             </div>
         </div>
         {/* Modal */}
-        {rulesModal && <Rules rulesModal={rulesModal} setRulesModal={setRulesModal} />}
+        {rulesModal && <Rules setRulesModal={setRulesModal} rulesModal={rulesModal} normalRules={normalRules} setNormalRules={setNormalRules} bonusRules={bonusRules} setBonusRules={setBonusRules} />}
         </>
     )
 }
+
+export default LandingPage;
